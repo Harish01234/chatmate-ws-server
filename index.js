@@ -8,8 +8,7 @@ const app = express();
 // Updated CORS configuration
 app.use(cors({
   origin: ['http://localhost:5173', 'https://chatmate-fe.vercel.app/'], // Include your Vercel URL
-  methods: ['GET', 'POST'],
-  credentials: true
+  methods: ['GET', 'POST']
 }));
 
 const server = http.createServer(app);
